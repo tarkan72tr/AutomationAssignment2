@@ -48,7 +48,7 @@ public class Main {
         Assert.assertEquals(actualQuantity, quantity);
 
         int intQuantity = Integer.parseInt(actualQuantity);
-        int expectedTotal = 0;
+        int expectedTotal;
         if(intQuantity>9){
             expectedTotal = (int) (intQuantity*100 - (intQuantity*100 * 0.08));
         }else{
